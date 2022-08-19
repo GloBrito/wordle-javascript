@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html,
+body {
+    height: 100%;
+    font-family: sans-serif;
+    font-family: 'Roboto Slab', serif;
+    ;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    align-items:center;
+    flex-direction: column;
+}
+
+header {
+    border-bottom: 1px solid rgb(168, 29, 98);
+    font: 'Roboto Slab', serif;
+    ;
+}
+
+.title {
+    color: rgb(45, 19, 19);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0.4rem 0 0.4rem 0;
+    text-align: center;
+
+}
+
+.board-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.board{
+    display: grid;
+}
