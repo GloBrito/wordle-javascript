@@ -1,15 +1,22 @@
-document.addEventListener("DOMContentLoaded", () => { //registra uma única espera de evento em um único alvo (ouvinte de eventos).
- createSquares();
+document.addEventListener("DOMContentLoaded", () => {
+  //registra uma única espera de evento em um único alvo (ouvinte de eventos).
+  createSquares();
 
-//Adiciona os quadrados (square)
-    function createSquares(){
-        const gameBoard = document.getElementById("board") //pega o elemento pelo id que será o tabuleiro
+  //Adiciona os quadrados (square)
+  function createSquares() {
+    const gameBoard = document.getElementById("board"); //pega o elemento pelo id que será o tabuleiro
 
-        for (let index = 0; index < 30; index++){ //30 quadrados do tabuleiro
-            let square = document.createElement("div"); //cria o elemento HTML especificado
-            square.classList.add("square");
-            square.setAttribute("id", index +1); //Adiciona um novo atributo ou modifica o valor de um atributo existente num elemento específico. Id do número do quadrado.
-            gameBoard.appendChild(square);
-        }
+    for (let index = 0; index < 30; index++) {
+      //30 quadrados do tabuleiro
+
+      let square = document.createElement("div"); //cria o elemento HTML especificado
+      square.classList.add("square");
+      square.setAttribute("id", index + 1); //Adiciona um novo atributo ou modifica o valor de um atributo existente num elemento específico. Id do número do quadrado.
+      gameBoard.appendChild(square);
+      // if ((index + 1) % 5 == 0){
+      //     gameBoard.innerHTML += '<div>g</div>';
+      // }else{
+      // }
     }
-    });
+  }
+});
